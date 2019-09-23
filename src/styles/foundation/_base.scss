@@ -5,14 +5,36 @@
 //
 // *************************************
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   background: $c-white;
+  color: $c-black;
+  font-family: $t-fontFamily;
+  font-size: $t-fontSize;
+  font-weight: $t-fontWeight;
+  line-height: $t-lineHeight;
 }
 
 // -------------------------------------
-//   Large Comment
+//   Block Elements
 // -------------------------------------
 
-// ----- Standard Comment ----- //
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
 
-// Small Comment
+h1 {
+  font-size: 2.5rem;
+}
+
+// -------------------------------------
+//   Inline Elements
+// -------------------------------------
+
+a {
+  color: $c-blue;
+  text-decoration: none;
+}
