@@ -1,0 +1,20 @@
+// *************************************
+//
+//   Cell
+//   -> Width-limiting containers
+//
+// *************************************
+
+.cell {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $s-maxWidth;
+}
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.cell--s {
+  max-width: ($s-maxWidth * 0.5);
+}

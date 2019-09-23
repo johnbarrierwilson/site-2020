@@ -10,12 +10,16 @@
 }
 
 html {
+  -webkit-font-smoothing: antialiased;
   background: $c-white;
-  color: $c-black;
+  color: $c-dark;
   font-family: $t-fontFamily;
-  font-size: $t-fontSize;
+  font-size: ($t-fontSize * 0.888);
   font-weight: $t-fontWeight;
   line-height: $t-lineHeight;
+  @include respond {
+    font-size: $t-fontSize;
+  }
 }
 
 // -------------------------------------
@@ -23,13 +27,24 @@ html {
 // -------------------------------------
 
 h1, h2, h3, h4, h5, h6 {
+  color: $c-black;
   font-weight: 700;
+  margin-top: 0;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.85rem;
+  line-height: 1.2;
+  margin-bottom: ($s-space * 0.5);
+  @include respond {
+    font-size: 2.25rem;
+  }
 }
 
+p {
+  margin-bottom: $s-space;
+  margin-top: 0;
+}
 // -------------------------------------
 //   Inline Elements
 // -------------------------------------

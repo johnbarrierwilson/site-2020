@@ -12,3 +12,18 @@
 @import "foundation/reset";
 @import "foundation/config";
 @import "foundation/base";
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+@import "components/avatar";
+@import "components/cell";
+@import "components/row";
+@import "components/well";
+
+// -------------------------------------
+//   Foundation - Tools
+// -------------------------------------
+
+@import "foundation/tools";

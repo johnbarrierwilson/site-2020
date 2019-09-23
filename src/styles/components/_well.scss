@@ -1,0 +1,27 @@
+// *************************************
+//
+//   Well
+//   -> Vertical spacing
+//
+// *************************************
+
+.well {
+  margin-bottom: $s-space;
+  margin-top: $s-space;
+  @include respond {
+    margin-bottom: ($s-space * 2.5);
+    margin-top: ($s-space * 2.5);
+  }
+}
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.well--l {
+  margin-bottom: ($s-space * 5);
+  margin-top: ($s-space * 5);
+  @include respond {
+    margin-bottom: ($s-space * 10);
+    margin-top: ($s-space * 10);
+  }
+}

@@ -168,6 +168,7 @@
 
 $c-black: #000000;
 $c-blue: #057AFF;
+$c-dark: #555555;
 $c-gray: #F7F8F9;
 $c-white: #ffffff;
 
@@ -179,3 +180,22 @@ $t-fontFamily: 'Inter', 'Helvetica Neue', Arial, sans-serif;
 $t-fontSize: 18px;
 $t-fontWeight: 400;
 $t-lineHeight: 1.5;
+
+// -------------------------------------
+//   Sizing
+// -------------------------------------
+
+$s-space: 20px;
+$s-maxWidth: 1200px;
+
+// -------------------------------------
+//   Responsiveness
+// -------------------------------------
+
+$g-breakpoint: 480px;
+
+@mixin respond {
+  @media screen and (min-width: $g-breakpoint) {
+    @content;
+  }
+}
