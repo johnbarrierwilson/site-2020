@@ -1,0 +1,26 @@
+// *************************************
+//
+//   Navigation
+//   -> Navigation links container
+//
+// *************************************
+
+.navigation {
+  a {
+    color: $c-dark;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-left: ($s-space * 1.5);
+    &:hover,
+    &:focus {
+      color: $c-blue;
+    }
+  }
+}
+// -------------------------------------
+//   Large Comment
+// -------------------------------------
+
+// ----- Standard Comment ----- //
+
+// Small Comment

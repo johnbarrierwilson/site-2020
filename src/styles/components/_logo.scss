@@ -1,0 +1,24 @@
+// *************************************
+//
+//   Logo
+//   -> Upper left branding
+//
+// *************************************
+
+.logo {
+  color: $c-black;
+  font-size: 1rem;
+  font-weight: 700;
+  &:hover,
+  &:focus {
+    color: $c-blue;
+  }
+}
+
+// -------------------------------------
+//   Large Comment
+// -------------------------------------
+
+// ----- Standard Comment ----- //
+
+// Small Comment
