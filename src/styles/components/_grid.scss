@@ -1,0 +1,20 @@
+// *************************************
+//
+//   Grid
+//   -> CSS Grid utilities
+//
+// *************************************
+
+.grid {
+  display: grid;
+  grid-gap: $s-space;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+// -------------------------------------
+//   Large Comment
+// -------------------------------------
+
+// ----- Standard Comment ----- //
+
+// Small Comment

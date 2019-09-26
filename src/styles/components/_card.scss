@@ -1,0 +1,22 @@
+// *************************************
+//
+//   Card
+//   -> Colored content container
+//
+// *************************************
+
+.card {
+  background: $c-gray;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  padding: ($s-space * 3) ($s-space * 6.5);
+  text-align: center;
+}
+
+// -------------------------------------
+//   Large Comment
+// -------------------------------------
+
+// ----- Standard Comment ----- //
+
+// Small Comment

@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
+    const { location, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header, navigation
 
@@ -24,7 +24,9 @@ class Layout extends React.Component {
     } else {
       header = (
         <h3>
-          <Link to={`/`}>{title}</Link>
+          <Link to={`/`}>
+            John Barrier Wilson
+          </Link>
         </h3>
       )
       navigation = (
@@ -46,9 +48,7 @@ class Layout extends React.Component {
           </header>
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            Be nice. Don't steal.
           </footer>
         </div>
       </div>
