@@ -24,7 +24,7 @@ class Layout extends React.Component {
     } else {
       header = (
         <h3>
-          <Link to={`/`}>
+          <Link to="/" className="logo">
             John Barrier Wilson
           </Link>
         </h3>

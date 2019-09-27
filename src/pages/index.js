@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 
 const IndexPage = (props) => {
   const { data } = props
-  const siteTitle = data.site.siteMetadata.title
+  console.log(data);
   return (
     <Layout location={props.location}>
       <div className="cell cell--s well well--l tac">
@@ -19,10 +19,20 @@ const IndexPage = (props) => {
       </div>
       <div className="grid well mt0">
         <Link to="/writing" className="card">
+          <Image
+            alt="illustrated icon for writing"
+            className="mb1"
+            fixed={data.writing.childImageSharp.fixed}
+          />
           <h2>Writing</h2>
           <p className="mb0 tcd">A list of common pieces and nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor.</p>
         </Link>
         <Link to="/resources" className="card">
+          <Image
+            alt="illustrated icon for resources"
+            className="mb1"
+            fixed={data.resources.childImageSharp.fixed}
+          />
           <h2>Resources</h2>
           <p className="mb0 tcd">A list of common pieces and nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor.</p>
         </Link>
@@ -35,16 +45,25 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+    avatar: file(relativePath: { eq: "images/profile-pic.jpg" }) {
       childImageSharp {
         fixed(width: 82, height: 82) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_tracedSVG
         }
       }
     }
-    site {
-      siteMetadata {
-        title
+    resources: file(relativePath: { eq: "images/icon-resources.png" }) {
+      childImageSharp {
+        fixed(width: 120, height: 120) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
+      }
+    }
+    writing: file(relativePath: { eq: "images/icon-writing.png" }) {
+      childImageSharp {
+        fixed(width: 120, height: 120) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
       }
     }
   }
