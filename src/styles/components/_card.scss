@@ -12,6 +12,13 @@
   padding: ($s-space * 3) ($s-space * 6.5);
   text-align: center;
 }
+a.card {
+  transition: background 100ms ease-out;
+  &:hover,
+  &:focus {
+    background: lighten($c-blue, 42.5%);
+  }
+}
 
 // -------------------------------------
 //   Large Comment

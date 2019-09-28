@@ -47,8 +47,14 @@ class Layout extends React.Component {
             <div>{navigation}</div>
           </header>
           <main>{children}</main>
-          <footer>
-            Be nice. Don't steal.
+          <footer className="footer">
+            <nav className="footer__links">
+              <Link to="/">Home</Link>
+              <Link to="#">Writing</Link>
+              <Link to="#">Resources</Link>
+              <Link to="#">Contact</Link>
+            </nav>
+            <small>&copy; 2019 John Barrier Wilson. All rights reserved.</small>
           </footer>
         </div>
       </div>

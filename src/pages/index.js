@@ -8,7 +8,7 @@ const IndexPage = (props) => {
   console.log(data);
   return (
     <Layout location={props.location}>
-      <div className="cell cell--s well well--l tac">
+      <div className="cell cell--s well well--l pr tac">
         <Image
           alt="portrait of John Barrier Wilson"
           className="avatar"

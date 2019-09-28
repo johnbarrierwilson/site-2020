@@ -1,0 +1,36 @@
+// *************************************
+//
+//   Footer
+//   -> Bottom o' the page
+//
+// *************************************
+
+.footer {
+  align-items: center;
+  border-top: 1px darken($c-gray, 5%) solid;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding-top: ($s-space * 3);
+}
+
+// -------------------------------------
+//   Elements
+// -------------------------------------
+
+.footer__links {
+  margin-bottom: ($s-space * 2);
+  a {
+    color: $c-black;
+    display: inline-block;
+    font-size: 1.25rem;
+    margin-right: $s-space;
+    &:hover,
+    &:focus {
+      color: $c-blue;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
